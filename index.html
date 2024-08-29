@@ -1,31 +1,28 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Venda seu carro</title>
+    <title>Venda Seu Carro</title>
     <link rel="stylesheet" href="css/styles.css" />
   </head>
   <body>
     <div class="container">
-      <div class="header">
+      <header class="header">
         <h3>Cadastre seu veículo para vender mais rápido!</h3>
-      </div>
+      </header>
+
       <div class="form-container">
         <div class="form-header">
           <p>Formulário</p>
         </div>
         <div class="form-body">
           <h1 class="form-title">Venda fácil seu carro!</h1>
-          <p>
-            Descreva as características e marque os opcionais que ele possui
-          </p>
+          <p>Descreva as características e marque os opcionais que ele possui</p>
           <form>
             <div class="box-input">
-              <label for="title"
-                >Título do anúncio <span class="required-field">*</span></label
-              >
+              <label for="title">Título do anúncio <span class="required-field">*</span></label>
               <input
                 type="text"
                 name="title"
@@ -38,9 +35,7 @@
               />
             </div>
             <div class="box-input">
-              <label for="price"
-                >Preço <span class="required-field">*</span></label
-              >
+              <label for="price">Preço <span class="required-field">*</span></label>
               <input
                 type="number"
                 name="price"
@@ -51,20 +46,17 @@
               />
             </div>
             <div class="box-input">
-              <label for="description"
-                >Descrição <span class="required-field">*</span></label
-              >
+              <label for="description">Descrição <span class="required-field">*</span></label>
               <textarea
                 name="description"
                 id="description"
                 class="block"
                 placeholder="Aqui você coloca os detalhes do veículo, por exemplo: se ele tem algum arranhão"
+                required
               ></textarea>
             </div>
             <div class="box-input">
-              <label for="brand"
-                >Marca <span class="required-field">*</span></label
-              >
+              <label for="brand">Marca <span class="required-field">*</span></label>
               <input
                 type="text"
                 name="brand"
@@ -75,9 +67,7 @@
               />
             </div>
             <div class="box-input">
-              <label for="model"
-                >Modelo <span class="required-field">*</span></label
-              >
+              <label for="model">Modelo <span class="required-field">*</span></label>
               <input
                 type="text"
                 name="model"
@@ -88,9 +78,7 @@
               />
             </div>
             <div class="box-input">
-              <label for="mileage"
-                >Kilometragem <span class="required-field">*</span></label
-              >
+              <label for="mileage">Kilometragem <span class="required-field">*</span></label>
               <input
                 type="number"
                 name="mileage"
@@ -101,9 +89,7 @@
               />
             </div>
             <div class="box-input">
-              <label for="purchase_date"
-                >Data de compra <span class="required-field">*</span></label
-              >
+              <label for="purchase_date">Data de compra <span class="required-field">*</span></label>
               <input
                 type="date"
                 name="purchase_date"
@@ -114,9 +100,9 @@
             </div>
             <div class="box-input">
               <p>Tipo de câmbio: <span class="required-field">*</span></p>
-              <input type="radio" id="manual" name="gear" />
+              <input type="radio" id="manual" name="gear" required />
               <label for="manual">Manual</label>
-              <input type="radio" id="auto" name="gear" />
+              <input type="radio" id="auto" name="gear" required />
               <label for="auto">Automático</label>
             </div>
             <div class="optional-box">
@@ -196,7 +182,7 @@
               </ul>
             </div>
             <div class="box-input">
-              <p>Fotos do carro: <span class="required-field">*</span></p>
+              <label for="images">Fotos do carro: <span class="required-field">*</span></label>
               <input
                 type="file"
                 multiple
